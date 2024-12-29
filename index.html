@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Curious Cat's Quest</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="Header">
+        <h1>The Curious Cat's Quest</h1>
+        <p>By: Maayan Korner & Joud Nasser</p>
+    </div>
+    <div id="intro">
+        <p id="gameText">You were laying in bed, playing games,slowly drifting off to sleep. Soft snors filling to room
+            as you fell intp deep slumber. <br><br>
+            When you wake up You find yourself in the middle of the <a id="tree">forest</a>, and your body, is a CAT'S?! nothing to your
+            name but a simple rusty compass. You look at it to inspect and It seems to go haywire?!? The arrow spins
+            round and round with no ending in sight. Lost, you look around, hoping to find a way to where exactly?...
+        </p>
+        <p id="choiceText">Which path do you wish to take?</p>
+    </div>
+    <div class="Game" id="choicebox">
+        <button class="direction-button" onclick="makeChoice('north')">North</button>
+        <div class="GameLine">
+            <button class="direction-button" onclick="makeChoice('west')">West</button>
+            <button class="direction-button" onclick="makeChoice('east')">East</button>
+        </div>
+        <button class="direction-button" onclick="makeChoice('south')">South</button>
+        <p id="GameText">Routes will vary with the user's choices</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
